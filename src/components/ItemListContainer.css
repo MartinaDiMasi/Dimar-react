@@ -1,0 +1,7 @@
+.titulo{
+    display: flex;
+    color: #0f2d4e;
+    font-size: 40px;
+    justify-content: center;
+    text-decoration: underline;
+}

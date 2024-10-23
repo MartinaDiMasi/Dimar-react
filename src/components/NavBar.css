@@ -1,0 +1,26 @@
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #F8F9FA;
+    padding-left: 20px;
+    padding-right: 20px;
+    height: 100px;
+
+}
+
+
+.boton {
+    padding: 10px 15px; /* Espaciado interno para los botones */
+    background-color: #0f2d4e; /* Color de fondo del botón */
+    color: white; /* Color del texto */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    margin: 0 10px; /* Espaciado horizontal entre botones */
+}
+
+.boton:hover {
+    background-color: #0c1f3473;
+};
