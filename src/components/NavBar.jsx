@@ -1,7 +1,7 @@
 import CardWidget from "./CardWidget";
 import './NavBar.css';
 
-const NavBar = ({clase}) => {
+const NavBar = ({clase,children}) => {
     return (
         <>  
         <div style={{paddingRight:130}}>
@@ -9,7 +9,7 @@ const NavBar = ({clase}) => {
             <button className={clase}>Productos</button>
             <button className={clase}>Más</button>
         </div>
-        <CardWidget />  
+        {children}
         </>
     )
 };
