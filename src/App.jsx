@@ -12,7 +12,7 @@ function App() {
 
     return (
       <>
-      <BrowserRouter>
+      <BrowserRouter basename="/Dimar-react">
         <header>
           <nav className='navbar'>
               <BrandContainer/>
