@@ -13,12 +13,12 @@ import {
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyAgTtxlKC30ujeLQ2pEqenEvFNRQdUMGD8",
-  authDomain: "dimar-be8bc.firebaseapp.com",
-  projectId: "dimar-be8bc",
-  storageBucket: "dimar-be8bc.firebasestorage.app",
-  messagingSenderId: "949420069509",
-  appId: "1:949420069509:web:8f5b5fcfc7bf53d25b8fec"
+    apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
+    authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
+    projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
+    storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
+    messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
+    appId: import.meta.env.VITE_FIREBASE_APP_ID,
 };
 
 const app = initializeApp(firebaseConfig);
