@@ -1,4 +1,4 @@
-const productos = [
+/* const productos = [
     {
         id: 7911247,
         title: 'Pantalon Nike Solo Swoosh',
@@ -143,3 +143,4 @@ export const getProduct = (id) => {
 export const getCategory = (category) => {
     return productos.filter((product) => product.category === category);
 }
+ */

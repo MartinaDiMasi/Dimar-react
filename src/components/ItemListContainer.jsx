@@ -1,27 +1,33 @@
 import { useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom';
+import { useParams } from 'react-router-dom'; 
 import './ItemListContainer.css';
-import { promesa } from './asyncMock';
 import ItemList from './ItemList';
+import { getProducts } from '../firebase/firebase';
 
-const ItemListContainer = ({ greeting, clase }) => {
-    const [items, setItems] = useState([]);
-    const { category } = useParams(); 
+export default function ItemListContainer() {
+    const [myProds, setMyProds] = useState([]);
+    const { categoryId } = useParams(); 
 
     useEffect(() => {
-        promesa.then((respuesta) => {
-            setItems(respuesta);
+        getProducts().then((products) => {
+            
+            if (categoryId) {
+                const filteredProducts = products.filter((product) => product.category === categoryId);
+                setMyProds(filteredProducts);
+            } else {
+                setMyProds(products);
+            }
+            
         });
-    }, []);
-
-    const itemsAMostrar = category ? items.filter(item => item.category === category) : items;
+    }, [categoryId]); 
 
     return (
         <>
-            <h2 className={clase}>{greeting}</h2>
-            <ItemList items={itemsAMostrar} />
+            {myProds.length > 0 ? (
+                <ItemList items={myProds} />
+            ) : (
+                <p>Cargando productos...</p>
+            )}
         </>
     );
-};
-
-export default ItemListContainer;
+}

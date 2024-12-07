@@ -1,0 +1,40 @@
+/* OrderDetail.css */
+.order-detail-container {
+    padding: 30px;
+    font-family: 'Helvetica Neue', sans-serif;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    max-width: 700px;
+    margin: 40px auto;
+    transition: all 0.3s ease;
+}
+
+.order-detail-container:hover {
+    box-shadow: 20px 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.order-detail-container h1 {
+    font-size: 28px;
+    color: #2c3e50;
+    margin-bottom: 20px;
+    text-align: center;
+    text-decoration-line: underline;
+}
+
+.order-detail-container p {
+    font-size: 18px;
+    color: #7f8c8d;
+    line-height: 1.6;
+}
+
+.order-detail-container strong {
+    color: #34495e;
+}
+
+.loading-text {
+    text-align: center;
+    font-size: 20px;
+    color: #95a5a6;
+    margin-top: 40px;
+}
