@@ -1,4 +1,3 @@
-// Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
 
 import {
@@ -22,7 +21,6 @@ const firebaseConfig = {
   appId: "1:949420069509:web:8f5b5fcfc7bf53d25b8fec"
 };
 
-// Initialize Firebase
 const app = initializeApp(firebaseConfig);
 
 const db = getFirestore(app);
@@ -65,16 +63,17 @@ export async function getProducts() {
         }
     }
 
-    //agregar una nueva orden de pedido
-    export const sendOrder = async (order) => {
-        try {
-          const orderRef = await addDoc(collection(db, "orders"), {
-            ...order,
-            date: serverTimestamp(), // Agregar la fecha al guardar la orden
-          });
-          return orderRef.id; // Devuelve el ID de la orden
-        } catch (error) {
-          console.error("Error al enviar la orden a Firebase:", error);
-          throw new Error("No se pudo procesar la orden.");
-        }
-      };
+/*     //agrego una nueva orden de pedido
+        export const sendOrder = async (order) => {
+            try {
+            const orderRef = await addDoc(collection(db, "orders"), {
+                ...order,
+                date: serverTimestamp(), 
+            });
+            return orderRef.id; // Devuelve el ID de la orden
+            } catch (error) {
+            console.error("Error al enviar la orden a Firebase:", error);
+            throw new Error("No se pudo procesar la orden.");
+            }
+        };
+ */

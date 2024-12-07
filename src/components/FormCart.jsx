@@ -20,7 +20,7 @@ const FormCart = () => {
     const validateForm = () => {
         const errors = {};
 
-        // Validar que todos los campos requeridos estén completos
+        // Valido los campos
         if (!formData.name) errors.name = "El nombre es obligatorio";
         if (!formData.email) errors.email = "El email es obligatorio";
         if (!formData.apellido) errors.apellido = "El apellido es obligatorio";
@@ -29,22 +29,22 @@ const FormCart = () => {
         if (!formData.pago) errors.pago = "Selecciona un método de pago";
 
         setFormErrors(errors);
-        return Object.keys(errors).length === 0; // Retorna true si no hay errores
+        return Object.keys(errors).length === 0; 
     };
 
     const handleSubmit = async (e) => {
         e.preventDefault();
 
         if (!validateForm()) {
-            return; // Si el formulario no es válido, no se envía
+            return; 
         }
 
-        // Crear el objeto de la orden
+        
         const order = {
             name: formData.name,
             email: formData.email,
             address: formData.address,
-            items: [] // Aquí agregas los productos de la orden
+            items: [] // Agrego los productos de la orden
         };
 
         try {

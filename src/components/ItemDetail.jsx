@@ -4,9 +4,9 @@ import { CartContext } from "../context/CartContext";
 
 const ItemDetail = ({ id, title, description, price, pictureUrl, brand, stock }) => {
     const [quantity, setQuantity] = useState(0);
-    const { addToCart } = useContext(CartContext); // Acceder al contexto
+    const { addToCart } = useContext(CartContext); 
 
-    // Función para manejar la adición al carrito
+
     const handleAdd = (count) => {
         setQuantity(count); // Actualiza la cantidad seleccionada
         addToCart({ id, title, description, price, pictureUrl, brand, stock }, count); // Agrega al carrito
@@ -23,7 +23,7 @@ const ItemDetail = ({ id, title, description, price, pictureUrl, brand, stock })
                 <p>stock: {stock}</p>
 
                 {quantity === 0 ? (
-                    // Pasa todo el objeto `product` a ItemCount
+                    
                     <ItemCount product={{ id, title, price, pictureUrl, brand, stock }} onAdd={handleAdd} />
                 ) : (
                     <p style={{ marginTop: "20px", fontWeight: "bold" }}>Producto agregado: {quantity}</p>

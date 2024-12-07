@@ -10,7 +10,7 @@ import Cart from "./components/Cart";
 import FormCart from "./components/FormCart";
 import OrderDetail from './components/OrderDetail';
 
-/* import { ProductsProvider } from './context/ProductsContext'; */
+
 
 function App() {
 

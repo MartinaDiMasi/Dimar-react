@@ -9,7 +9,7 @@ const CardWidget = () => {
             <section style={{display: "flex", alignItems:"center",gap:10, paddingRight:35}}>
                 <button >
                     <Link to="/cart">🛒</Link>
-                </button>  {/*DESPUES CAMBIAR ICONO CARRITO*/}
+                </button> 
                 <p style={{fontSize: 20, color: "black"}}>{cartCount}</p>
             </section>  
         </>

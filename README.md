@@ -1,8 +1,25 @@
-# React + Vite
+# ESTE ES MI PROYECTO CON REACT
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## DIMAR es un e-commerce diseñado para ofrecer variedad de indumentaria masculina y unisex. El objetivo es brindar a los usuarios una experiencia de compra cómoda y moderna.
 
-Currently, two official plugins are available:
+## Tecnologías utilizadas:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- React Router Dom: Es la base del proyecto.
+- Vite: Para configurar y construir el proyecto.
+- Firebase: Como base de datos para manejar los productos y generar órdenes.
+
+## Caracteristicas del e-commerce:
+
+- Catálogo de productos
+- Sistema de categorías 
+- Detalle de productos
+- Carrito de compras
+- Gneración de ordenes
+
+## Visita la web:
+
+[TechnoWorld]()
+
+### ScreenShots de la web:
+
+ ![Captura](./src/assets/captura.png)
