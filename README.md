@@ -18,7 +18,7 @@
 
 ## Visita la web:
 
-[TechnoWorld](https://dimar-ecommerce.netlify.app/)
+[DIMAR](https://dimar-ecommerce.netlify.app/)
 
 ### ScreenShots de la web:
 
